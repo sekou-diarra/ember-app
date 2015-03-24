@@ -1,8 +1,10 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
+
   var ENV = {
     modulePrefix: 'shop-market-app',
+    podModulePrefix:'shop-market-app/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
