@@ -2,6 +2,7 @@
 
   "disableAnalytics": false,
   "usePods":true,
-  "environment" : "development"
+  "environment" : "development",
+  "liveReload":true
 
 }

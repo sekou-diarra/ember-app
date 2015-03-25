@@ -4,7 +4,8 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var env = process.env.EMBER_ENV;
 
 var app = new EmberApp({
-	 storeConfigInMeta: false
+	 storeConfigInMeta: false,
+      wrapInEval: false
 
 });
 console.log(env);
