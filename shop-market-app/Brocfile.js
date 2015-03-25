@@ -1,10 +1,27 @@
 /* global require, module */
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var env = process.env.EMBER_ENV;
 
 var app = new EmberApp({
 	 storeConfigInMeta: false
+
 });
+console.log(env);
+if (env === 'development') {
+
+  app.options.inlineContent = {
+    'appJS':{
+    	file:'./app/app.js',
+    	enabled: true
+    },
+
+    'appCSS':{
+    	file:'./app/styles/app.css',
+    	enabled:true
+    }
+  };
+}
 
 // Use `app.import` to add additional libraries to the generated
 // output files.
