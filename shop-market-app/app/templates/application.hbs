@@ -1,3 +1,17 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<header class="page-header">
+    <h2>Bienvennue Sur Mon Site
+        <small>WithEmebr</small>
+    </h2>
+</header>
 
+<nav>
+    <ul class="nav nav-pills">
+      {{#link-to 'index' tagName='li' href=false  class="active"}}<a href="#">Home</a>{{/link-to}}
+      {{#link-to 'contact' href=false tagName='li'}} <a href="#">contact</a>{{/link-to}}
+    </ul>
+</nav>
+
+<section>
+
+</section>
 {{outlet}}
