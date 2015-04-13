@@ -1,0 +1,31 @@
+[
+  {
+    "nomProduit": "PS4",
+    "fabriquant": "SONY",
+    "prixProduit": 300,
+    "descriptionProduit": "Console Sony blabla",
+    "enStock": true
+  },
+  {
+    "nomProduit": "WIU",
+    "fabriquant": "NINTENDO",
+    "prixProduit": 200,
+    "descriptionProduit": "La Console a nintendo",
+    "enStock": false
+  },
+  {
+    "nomProduit": "XBOX ONE",
+    "fabriquant": "MICROSOFT",
+    "prixProduit": 500,
+    "descriptionProduit": "la console à nintendo",
+    "enStock": true
+  },
+  {
+    "nomProduit": "SP",
+    "fabriquant": "SONY",
+    "prixProduit": 150,
+    "descriptionProduit": "Console Portable DeSony",
+    "enStock": false
+  }
+]
+

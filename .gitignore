@@ -3,12 +3,12 @@
 logs
 *.log
 # compiled output
-/dist
-/tmp
+dist
+tmp
 
 # dependencies
-*/node_modules
-*/bower_components
+node_modules
+bower_components
 
 # misc
 /.sass-cache
@@ -32,3 +32,4 @@ build/Release
 
 # Users Environment Variables
 .lock-wscript
+.idea

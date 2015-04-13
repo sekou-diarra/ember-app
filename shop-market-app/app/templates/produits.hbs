@@ -1,0 +1,23 @@
+<div class="container-fluid">
+
+    <p>
+        il y a  {{nombreDeProduit}} produits dans la liste
+    </p>
+
+
+    <aside class="list-group">
+
+      {{#each produit in model}}
+        {{#link-to "produit" produit tagName="li"  class="list-group-item"}}
+          {{produit.nomProduit}} {{produit.prixProduit}}€
+        {{/link-to}}
+      {{/each}}
+
+
+    </aside>
+
+
+    <section class="tireProduitIndex">
+      {{outlet}}
+    </section>
+</div>

@@ -1,7 +1,6 @@
 {
 
   "disableAnalytics": false,
-  "usePods":true,
   "environment" : "development",
   "liveReload":true
 

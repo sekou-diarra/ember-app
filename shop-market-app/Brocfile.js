@@ -4,8 +4,9 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var env = process.env.EMBER_ENV;
 
 var app = new EmberApp({
-  storeConfigInMeta: false
-  //    wrapInEval: false,
+  storeConfigInMeta: false,
+  wrapInEval: false,
+  autoReload: true
   //
   //'ember-cli-bootstrap': {
   ////  'importBootstrapJS': true,
@@ -42,6 +43,9 @@ if (env === 'development') {
 // modules that you would like to import into your application
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
+app.import('bower_components/moment/moment.js');
 app.import('bower_components/bootstrap/dist/css/bootstrap.css');
 app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+app.import('bower_components/ember-data-hal-adapter/hal_adapter.js');
+app.import('bower_components/ember-data-hal-adapter/hal_serializer.js');
 module.exports = app.toTree();

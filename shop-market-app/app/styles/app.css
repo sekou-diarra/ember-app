@@ -1,2 +1,13 @@
+/*body { padding-top: 70px; };*/
 
+body {
+  padding-top: 70px;
+}
 
+.listeProduit {
+  float: left;
+}
+
+.tireProduitIndex {
+  float: right;
+}

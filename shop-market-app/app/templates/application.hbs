@@ -1,17 +1,21 @@
 <header class="page-header">
     <h2>Bienvennue Sur Mon Site
-        <small>WithEmebr</small>
+        <small>WithEmebr {{time}}</small>
     </h2>
 </header>
-
-<nav>
+<div class="container">
+    <nav class>
     <ul class="nav nav-pills">
-      {{#link-to 'index' tagName='li' href=false  class="active"}}<a href="#">Home</a>{{/link-to}}
-      {{#link-to 'contact' href=false tagName='li'}} <a href="#">contact</a>{{/link-to}}
+      {{#link-to 'index' tagName='li' href=false}}<a href="#index">Acceuil</a>{{/link-to}}
+      {{#link-to 'connection' tagName='li' href=false}}<a href="#connection">Se Connecter</a>{{/link-to}}
+      {{#link-to 'produits' tagName='li'}}<a href="#produits">Consulter les produits</a>{{/link-to}}
+      {{#link-to 'contact' href=false tagName='li'}} <a href="#contact">contact</a>{{/link-to}}
+      {{#link-to 'clients' href=false tagName='li'}} <a href="#clients">clients</a>{{/link-to}}
     </ul>
 </nav>
 
-<section>
 
+    <section class="container-fluid">
+      {{outlet}}
 </section>
-{{outlet}}
+</div>
